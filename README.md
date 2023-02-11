@@ -6,9 +6,8 @@ if the tag old or deprecated
 
 ## Examples 
 
-convert name to tag ex: h2 -- > <h2>
 
-```python
+```
 from pyhtmlinfo import name_to_tag
 
 name_to_tag('h2') - > '<h2>'
