@@ -7,7 +7,7 @@ if the tag old or deprecated
 ## Examples 
 
 
-```
+```python
 from pyhtmlinfo import name_to_tag
 
 name_to_tag('h2') - > '<h2>'
