@@ -17,8 +17,8 @@ DESCRIPTION = 'pyhtmlinfo is a python library it can be used to get html tags an
 URL = 'https://github.com/amr2018/pyhtmlinfo'
 EMAIL = 'amr.ee@yahoo.com'
 AUTHOR = 'Amr Elgarhy'
-REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1.0'
+REQUIRES_PYTHON = '>=3.1.0'
+VERSION = '0.2.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
