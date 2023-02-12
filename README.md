@@ -28,7 +28,7 @@ tag = html_info.name_to_tag('h1') # --> <h1>
 
 tag_name = html_info.tag_to_name('<h1>') # --> h1
 
-tag_description = html_info.is_deprecated('<img>') # --> The <img> HTML element embeds an image into the document.
+tag_description = html_info.tag_description('<img>') # --> The <img> HTML element embeds an image into the document.
 
 is_tag = html_info.is_html_tag('<h1>') # --> True
 
