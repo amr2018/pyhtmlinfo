@@ -1,15 +1,40 @@
- # pyhtmlinfo
-pyhtmlinfo is a python library it can be used to get html tags and description
-not only that you can get deprecated html tags or html elements
-by using  is_old_or_deprecated(tag) this function return True
-if the tag old or deprecated
+# Pyhtmlinfo
 
-## Examples 
+Pyhtmlinfo is a python library that can be used to learn about html tags
+you can get info about latest tags and deprecated tags too
 
+## Installation
+
+* Using PyPi
+```
+python pip install pyhtmlinfo
+````
+
+* Using this Github Repo
+```
+python pip install git+https://github.com/amr2018/pyhtmlinfo.git
+````
+
+## Examples
 
 ```python
-from pyhtmlinfo import name_to_tag
+from pyhtmlinfo import HtmlInfo
 
-name_to_tag('h2') - > '<h2>'
+html_info = HtmlInfo()
 
+tags_list = html_info.all_tags(deprecated=True) # Returns all tags, set deprecated False to return only working tags.
+
+tag = html_info.name_to_tag('h1') # --> <h1>
+
+tag_name = html_info.tag_to_name('<h1>') # --> h1
+
+tag_description = html_info.tag_description('<img>') # --> The <img> HTML element embeds an image into the document.
+
+is_tag = html_info.is_html_tag('<h1>') # --> True
+
+is_deprecated = html_info.is_deprecated('acronym') # --> True
 ```
+
+## Credits
+
+* Tags and Description from [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#main_root)
